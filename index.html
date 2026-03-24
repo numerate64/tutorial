@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 GitHub Pages Magic Quest - Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="mascot">🧙‍♂️</div>
+        <h1>Welcome to GitHub Pages Magic Quest!</h1>
+        <p class="subtitle">Transform your code into a magical website</p>
+    </header>
+
+    <nav class="navigation">
+        <button class="nav-btn active" onclick="showSection('quest-intro')">Quest Start</button>
+        <button class="nav-btn" onclick="showSection('basics')">The Basics</button>
+        <button class="nav-btn" onclick="showSection('setup')">Setup Steps</button>
+        <button class="nav-btn" onclick="showSection('practice')">Practice</button>
+        <button class="nav-btn" onclick="showSection('mastery')">Mastery</button>
+    </nav>
+
+    <main>
+        <!-- Quest Introduction -->
+        <section id="quest-intro" class="content-section active">
+            <div class="card quest-card">
+                <h2>🎯 Your Quest Begins Here!</h2>
+                <p>Welcome, brave developer! You've stumbled upon an enchanted tutorial realm where ancient GitHub magic flows through the digital lands.</p>
+                
+                <div class="quest-box">
+                    <div class="quest-npc">
+                        <span class="npc-icon">🧙‍♂️</span>
+                        <p class="npc-dialog">"Greetings! I am Merlin, the Code Wizard. Your mission, should you choose to accept it, is to master the ancient art of GitHub Pages and deploy your first website to the mystical internet realm!"</p>
+                    </div>
+                </div>
+
+                <div class="difficulty-selector">
+                    <p>Choose your difficulty:</p>
+                    <button class="difficulty easy" onclick="setDifficulty('easy')">Easy 🌱</button>
+                    <button class="difficulty medium" onclick="setDifficulty('medium')">Medium 🌿</button>
+                    <button class="difficulty hard" onclick="setDifficulty('hard')">Hard 🌳</button>
+                </div>
+
+                <div class="rewards-box">
+                    <h3>⭐ Quest Rewards:</h3>
+                    <ul>
+                        <li>🏆 Your own live website on the internet</li>
+                        <li>📜 Scrolls of Knowledge (tutorial docs)</li>
+                        <li>💪 GitHub Powers Unlocked</li>
+                        <li>🎉 Bragging Rights!</li>
+                    </ul>
+                </div>
+
+                <button class="start-quest-btn" onclick="showSection('basics')">Begin Quest →</button>
+            </div>
+        </section>
+
+        <!-- Basics Section -->
+        <section id="basics" class="content-section">
+            <div class="card">
+                <h2>📚 The Fundamentals of GitHub Pages Magic</h2>
+                <p>Before we cast our spells, let's understand the ancient magic that powers GitHub Pages!</p>
+            </div>
+
+            <div class="grid-container">
+                <div class="card concept-card">
+                    <div class="card-icon">📦</div>
+                    <h3>What is GitHub Pages?</h3>
+                    <p>GitHub Pages is a feature that lets you host static websites directly from your GitHub repositories. No servers to manage, no backend needed—just pure HTML, CSS, and JavaScript magic!</p>
+                    <div class="highlight">💡 <strong>Free hosting!</strong> Your website lives on the internet for FREE.</div>
+                </div>
+
+                <div class="card concept-card">
+                    <div class="card-icon">🗂️</div>
+                    <h3>Static vs Dynamic</h3>
+                    <p>GitHub Pages hosts <strong>static websites</strong>—that means HTML, CSS, and JavaScript files that don't require a backend database or server-side processing.</p>
+                    <div class="examples">
+                        <p><strong>✅ Perfect for:</strong> Portfolios, blogs, documentation, landing pages</p>
+                        <p><strong>❌ Not for:</strong> User accounts, real-time databases, complex backends</p>
+                    </div>
+                </div>
+
+                <div class="card concept-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>The Domain Magic</h3>
+                    <p>Your website automatically gets a free domain: <code>username.github.io</code></p>
+                    <p>You can also connect your own custom domain if you wish!</p>
+                    <div class="highlight">📍 <strong>Example:</strong> myname.github.io or mystartup.com</div>
+                </div>
+
+                <div class="card concept-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>The Deployment Flow</h3>
+                    <p>When you push code to GitHub, it automatically deploys your site. No manual steps needed!</p>
+                    <div class="flow-diagram">
+                        <div class="flow-step">Write Code</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Git Push</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Auto Deploy</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Live! 🎉</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Setup Section -->
+        <section id="setup" class="content-section">
+            <div class="card">
+                <h2>⚙️ The Setup Quest Line</h2>
+                <p>Follow these steps to prepare your magical realm for GitHub Pages!</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create a Special Repository</h3>
+                        <p>Create a new repository with the exact name: <code class="code-highlight">username.github.io</code></p>
+                        <p class="tip">💡 Replace "username" with your actual GitHub username!</p>
+                        <div class="action-box">
+                            <p>✅ Initialize with README</p>
+                            <p>✅ Add .gitignore for web</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Clone the Repository</h3>
+                        <p>On your computer, clone the repo:</p>
+                        <pre class="code-block">git clone https://github.com/username/username.github.io.git
+cd username.github.io</pre>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Create Your First Page</h3>
+                        <p>Create an <code>index.html</code> file in your repository:</p>
+                        <pre class="code-block">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Awesome Site&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World! 🎉&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Commit and Push</h3>
+                        <p>Save your changes to the internet:</p>
+                        <pre class="code-block">git add .
+git commit -m "Launch my website! 🚀"
+git push origin main</pre>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Watch the Magic Happen! ✨</h3>
+                        <p>Visit your site at: <code class="code-highlight">https://username.github.io</code></p>
+                        <p class="tip">⏱️ It may take a few minutes to go live!</p>
+                        <div class="celebration">🎆 Your website is now on the internet! 🎆</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="practice" class="content-section">
+            <div class="card">
+                <h2>🛠️ Practice Your Skills</h2>
+                <p>Now that you understand the basics, try these challenges!</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-level">Level 1 🌱</div>
+                    <h3>Add Some Style</h3>
+                    <p>Create a <code>styles.css</code> file and link it in your HTML. Add colors, fonts, and spacing to make your page beautiful!</p>
+                    <button class="hint-btn" onclick="toggleHint('hint1')">Show Hint</button>
+                    <div id="hint1" class="hint hidden">
+                        <p><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-level">Level 2 🌿</div>
+                    <h3>Create Multiple Pages</h3>
+                    <p>Make an <code>about.html</code> and <code>projects.html</code> page. Link them together with a navigation menu!</p>
+                    <button class="hint-btn" onclick="toggleHint('hint2')">Show Hint</button>
+                    <div id="hint2" class="hint hidden">
+                        <p>Use <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code> for navigation links</p>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-level">Level 3 🌳</div>
+                    <h3>Add Interactivity</h3>
+                    <p>Write JavaScript to create interactive elements. Try a toggle button, a form, or a simple game!</p>
+                    <button class="hint-btn" onclick="toggleHint('hint3')">Show Hint</button>
+                    <div id="hint3" class="hint hidden">
+                        <p><code>&lt;button onclick="myFunction()"&gt;Click me!&lt;/button&gt;</code></p>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-level">Level 4 ⭐</div>
+                    <h3>Deploy a Portfolio</h3>
+                    <p>Build a complete portfolio site showcasing your projects, skills, and contact info. Share it with the world!</p>
+                    <button class="hint-btn" onclick="toggleHint('hint4')">Show Hint</button>
+                    <div id="hint4" class="hint hidden">
+                        <p>Organize with semantic HTML: <code>header</code>, <code>nav</code>, <code>main</code>, <code>footer</code></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mastery Section -->
+        <section id="mastery" class="content-section">
+            <div class="card">
+                <h2>🏆 Achieve GitHub Pages Mastery</h2>
+                <p>You've come far, brave developer! Here are advanced techniques to elevate your site!</p>
+            </div>
+
+            <div class="mastery-grid">
+                <div class="mastery-card">
+                    <h3>📌 Custom Domain</h3>
+                    <p>Connect your own domain name to your GitHub Pages site. Create a CNAME file with your domain!</p>
+                </div>
+
+                <div class="mastery-card">
+                    <h3>🎨 Use a Theme</h3>
+                    <p>GitHub Pages supports Jekyll themes! Choose from pre-designed themes in your repository settings.</p>
+                </div>
+
+                <div class="mastery-card">
+                    <h3>📝 Jekyll & Markdown</h3>
+                    <p>Use Jekyll to convert Markdown files to HTML automatically. Perfect for blogs with less HTML coding!</p>
+                </div>
+
+                <div class="mastery-card">
+                    <h3>🔍 SEO Optimization</h3>
+                    <p>Add meta tags, optimize URLs, and make your site discoverable by search engines like Google!</p>
+                </div>
+
+                <div class="mastery-card">
+                    <h3>📱 Responsive Design</h3>
+                    <p>Use CSS media queries to make your site look great on phones, tablets, and desktop computers.</p>
+                </div>
+
+                <div class="mastery-card">
+                    <h3>⚡ Performance</h3>
+                    <p>Optimize images, minify CSS/JS, and cache files to make your site lightning fast!</p>
+                </div>
+            </div>
+
+            <div class="resources-box">
+                <h3>📖 Essential Resources</h3>
+                <ul class="resources-list">
+                    <li><a href="https://docs.github.com/en/pages">Official GitHub Pages Documentation</a></li>
+                    <li><a href="https://jekyllrb.com/">Jekyll - Static Site Generator</a></li>
+                    <li><a href="https://pages.github.com/">GitHub Pages Home</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN - HTML Fundamentals</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN - CSS Guide</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-animation">✨</div>
+    <div class="floating-animation" style="left: 80%; animation-delay: 1s;">⭐</div>
+    <div class="floating-animation" style="left: 20%; animation-delay: 2s;">🚀</div>
+
+    <footer>
+        <p>Made with 💜 and magical GitHub Pages wisdom</p>
+        <p class="footer-note">This tutorial site was created using GitHub Pages itself!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

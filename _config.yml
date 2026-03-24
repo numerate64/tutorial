@@ -1,0 +1,37 @@
+# GitHub Pages Configuration for Jekyll
+
+# Site settings
+title: GitHub Pages Magic Quest
+description: A fun and whimsical tutorial for learning GitHub Pages
+baseurl: "" # Leave empty for username.github.io repos
+url: "https://yourusername.github.io"
+
+# Theme (optional - this site uses custom CSS)
+theme: null
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude directories and files by default
+exclude:
+  - .github
+  - .gitignore
+  - README.md
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include hidden files
+include:
+  - .htaccess
+
+# Timezone
+timezone: UTC
+
+# Whitelist plugins
+whitelist:
+  - jekyll-feed
